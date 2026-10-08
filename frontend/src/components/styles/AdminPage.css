@@ -1,0 +1,50 @@
+/* wa_ss24_primeflex/frontend/src/components/styles/AdminPage.css */
+.admin-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.user-list, .movie-list {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-left: 1px;
+    padding: 3px 3px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+Link {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+}

@@ -1,0 +1,153 @@
+/* wa_ss24_primeflex/frontend/src/components/styles/SignUpPage.css */
+.sign-up-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/head.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(0.1px);
+    opacity: 0.99;
+    z-index: -1;
+}
+.sign-up-page::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.sign-up-page {
+    max-width: 250px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.sign-up-page h2 {
+    margin-bottom: 20px;
+}
+
+.sign-up-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up-page label {
+    margin-bottom: 10px;
+}
+
+.sign-up-page input {
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 11px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.sign-up-page button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.sign-up-page button:hover {
+    background-color: green;
+}
+
+.sign-up-page .sign-up-button {
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sign-up-page .sign-up-button:hover {
+    background-color: green;
+}
+
+.password-field {
+    display: flex;
+    align-items: center;
+}
+
+.show-password-checkbox {
+    margin-left: auto;
+}
+
+.signup-link {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
+
+.signup-link:hover {
+    color: red;
+}
+
+.sign-up-page .sign-in-button {
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.sign-up-page .sign-in-button:hover {
+    color: red;
+}
+
+.sign-up-page {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-content {
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+}
+
+.cancel-button {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
+
+.button-container .cancel-button:hover {
+    color: red;
+}

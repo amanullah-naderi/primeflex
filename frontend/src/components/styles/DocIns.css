@@ -1,0 +1,8 @@
+/* wa_ss24_primeflex/frontend/src/components/styles/DocIns.css */
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}

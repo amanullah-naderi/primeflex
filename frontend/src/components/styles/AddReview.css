@@ -1,0 +1,95 @@
+/* wa_ss24_primeflex/frontend/src/components/styles/AddReview.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.formContainer {
+    width: 100%;
+    max-width: 400px;
+}
+
+.formInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.textArea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.reviewList {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #222;
+}
+
+.reviewItem {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.reviewItem:hover {
+    cursor: pointer;
+}
+
+.deleteButton,
+.editButton {
+    margin-left: 50px;
+    position: relative;
+    left: 11px;
+    padding: 8px;
+    border: none;
+    border-radius: 9px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover,
+.editButton:hover {
+    background-color: green;
+}

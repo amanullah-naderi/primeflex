@@ -1,0 +1,70 @@
+/* wa_ss24_primeflex/frontend/src/components/styles/RatingPage.css */
+.rating-page {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.App-link {
+    text-decoration: none;
+}
+
+.App-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.App-logo:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(243, 3, 3);
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+}
+
+li img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.error-message {
+    color: red;
+}

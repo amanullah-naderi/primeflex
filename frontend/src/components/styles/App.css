@@ -1,0 +1,200 @@
+/* wa_ss24_primeflex/frontend/src/App.css */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  position: relative;
+}
+
+.header-controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.sign-in-link, .menu-link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: red;
+}
+
+.closebtn {
+  position: absolute;
+  top: 3px;
+  right: 25px;
+  padding: 3px;
+  border-radius: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  padding: 20px 11px;
+  border: none;
+  border-radius: 33px;
+  transition: background-color 0.3s;
+}
+
+.openbtn:hover {
+  background-color: red;
+}
+
+.shifted {
+  margin-left: 250px;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.App-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 20vmin;
+  margin-left: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-image: url('../images/head.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(0.1px);
+  opacity: 0.99;
+  outline: 2px solid rgba(0.5, 0.6, 0.8, 0.9);
+}
+
+.App-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/head.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(0.1px);
+  opacity: 0.99;
+  z-index: -1;
+}
+.App-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+.tv-section1,
+.tv-section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-weight: lighter;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.tv-section1 div,
+.tv-section2 div {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.tv-section1 img,
+.tv-section2 img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .tv-section1,
+  .tv-section2 {
+    font-size: 18px;
+  }
+}
+
+.App h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
