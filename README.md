@@ -1,9 +1,5 @@
 # wa_ss24_primeflex
 
-# Teammitglieder:
-- Amanullah Naderi
-- Rudolf Minz
-
 ## Getting started
 
 ***
