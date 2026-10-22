@@ -12,7 +12,7 @@ git push -uf origin main
 git checkout release
 ```
 
-To get started with wa_ss24_primeflex, follow these steps: 
+To get started with wa_ss24_primeflex, follow these steps:
 
 1. **Clone the Repository**: Download or clone the latest version of wa_ss24_primeflex from our [GitLab repository](https://git.ai.fh-erfurt.de/ma4163sp1/wa/ss24/wa_ss24_primeflex.git).
 
