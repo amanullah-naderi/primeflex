@@ -1,7 +1,6 @@
 # wa_ss24_primeflex
 
 ## Getting started
-
 ***
 
 ```
