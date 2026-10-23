@@ -2,7 +2,6 @@
 
 ## Getting started
 ***
-
 ```
 cd existing_repo
 git remote add origin https://git.ai.fh-erfurt.de/ma4163sp1/wa/ss24/wa_ss24_primeflex.git
