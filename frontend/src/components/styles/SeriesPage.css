@@ -1,0 +1,82 @@
+/* wa_ss24_primeflex/frontend/src/components/styles/SeriesPage.css */
+.series-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+}
+
+.App-link {
+    text-decoration: none;
+}
+
+.App-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 0;
+}
+
+.description {
+    font-style: italic;
+}
+
+.serie-item {
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    border: 3px solid rgba(239, 9, 9, 0.78);
+}
+
+.serie-item:hover {
+    background-color: rgb(5, 5, 5);
+}
+
+.serie-image {
+    width: 200px;
+    height: auto;
+    margin-right: 5px;
+    border-radius: 50px;
+}
+
+.serie-details {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: white;
+}

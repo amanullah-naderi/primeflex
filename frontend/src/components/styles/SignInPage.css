@@ -1,0 +1,167 @@
+/* wa_ss24_primeflex/frontend/src/components/styles//SignInPage.css */
+.sign-in-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/head.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(0.1px);
+    opacity: 0.99;
+    z-index: -1;
+}
+.sign-in-page::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.sign-in-page {
+    max-width: 250px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.sign-in-page h2 {
+    margin-bottom: 20px;
+}
+
+.sign-in-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-in-page label {
+    margin-bottom: 10px;
+}
+
+.sign-in-page input {
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 11px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.sign-in-page button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.sign-in-page button:hover,
+.sign-in-page .sign-in-button:hover,
+.sign-in-page .cancel-button:hover {
+    background-color: red;
+    color: white;
+}
+
+.sign-in-page .sign-in-button,
+.sign-in-page .cancel-button {
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.password-field {
+    display: flex;
+    align-items: center;
+}
+
+.show-password-checkbox {
+    margin-right: 48%;
+}
+
+.sign-up-page .sign-in-button,
+.sign-in-page .sign-in-button {
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.sign-up-page .sign-in-button:hover,
+.sign-in-page .sign-in-button:hover,
+.cancel-button:hover {
+    color: white;
+}
+
+.sign-in-page {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-content {
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+}
+
+.forgot-password-link {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    padding-right: 11px;
+}
+
+.forgot-password-link:hover {
+    color: red;
+}
+
+.logout-button {
+    margin-top: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+
+.logout-button:hover {
+    background-color: #bd2130;
+}
+
+.error-message {
+    color: red;
+    background-color: black;
+    border-radius: 9px;
+}

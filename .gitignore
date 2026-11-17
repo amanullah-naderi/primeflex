@@ -1,0 +1,8 @@
+node_modules/
+build/
+.gradle/
+.idea/
+DerivedData/
+.DS_Store
+*.xcworkspace/xcuserdata/
+.env

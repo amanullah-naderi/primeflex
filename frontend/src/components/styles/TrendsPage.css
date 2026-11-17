@@ -1,0 +1,84 @@
+/* wa_ss24_primeflex/frontend/src/components/styles/TrendsPage.css */
+.trends-page {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.App-link {
+    text-decoration: none;
+}
+
+.App-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.App-logo:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.slider-container {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.slider-item {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    scroll-snap-align: start;
+}
+
+.trend-item {
+    background: rgba(1, 5, 0, 0.7);
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 12px 14px 16px rgba(255, 0, 0, 0.43);
+    width: 400px;
+    word-wrap: break-word;
+}
+
+.trend-item:hover {
+    transform: translateY(-5px);
+}
+
+.description {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.scroll-arrow {
+    position: absolute;
+    top: 55%;
+    left: 10px;
+    margin-left: 33px;
+    transform: translateY(-50%);
+    font-size: 44px;
+    color: #ff0000;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-arrow:hover {
+    opacity: 0.7;
+}

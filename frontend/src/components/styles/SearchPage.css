@@ -1,0 +1,68 @@
+/* wa_ss24_primeflex/frontend/src/components/styles/SearchPage.css */
+.search-page {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.App-link {
+    text-decoration: none;
+}
+
+.App-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.App-logo:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.search-form {
+    margin-bottom: 20px;
+}
+
+.search-form input {
+    padding: 10px;
+    border: red;
+    border-radius: 15px;
+    box-shadow: 12px 14px 16px rgba(255, 0, 0, 0.43);
+    font-size: 16px;
+    width: 300px;
+}
+
+.search-results {
+    list-style-type: circle;
+    padding: 0;
+}
+
+.search-result {
+    background: rgba(1, 5, 0, 0.7);
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 12px 14px 16px rgba(255, 0, 0, 0.43);
+    width: 360px;
+    word-wrap: break-word;
+}
+
+.search-result:hover {
+    transform: translateY(-5px);
+}
+
+.search-result img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}

@@ -1,0 +1,64 @@
+# wa_ss24_primeflex/docker-compose.yml
+version: "3.8"
+services:
+
+  # mongodb
+  mongodb:
+    image: mongo:4.4
+    container_name: db_wa_ss24_primeflex
+    restart: always
+    ports:
+      - "10035:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - ./backend/database/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js
+
+  # mongo-express
+  database_web:
+    image: mongo-express
+    container_name: database_web_wa_ss24_primeflex
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+      ME_CONFIG_MONGODB_URL: mongodb://root:example@mongodb:27017/
+      ME_CONFIG_BASICAUTH: false
+    depends_on:
+      - mongodb
+
+  # backend
+  backend:
+    build: ./backend
+    container_name: backend_wa_ss24_primeflex
+    restart: always
+    ports:
+      - "10033:10033"
+    environment:
+      - PORT=10033
+      - MONGO_URI=mongodb://root:example@mongodb:27017/
+      - REACT_APP_MOVIES_RATING_RAPIDAPI_HOST=imdb188.p.rapidapi.com
+      - REACT_APP_MOVIES_RATING_RAPIDAPI_KEY=29d4407cfdmsh6d2b236182761e4p142b4ejsn6a4a6fa0a39a
+      - REACT_APP_IMDB_RAPIDAPI_HOST=imdb-top-100-movies.p.rapidapi.com
+      - REACT_APP_IMDB_RAPIDAPI_KEY=29d4407cfdmsh6d2b236182761e4p142b4ejsn6a4a6fa0a39a
+      - JWT_SECRET=431d2268ff2d197e94d85ee71534bc5d143d958c7a5c553d7051f24f03d975ec
+    volumes:
+      - ./backend:/usr/src/app
+
+  # frontend
+  frontend:
+    build: ./frontend
+    container_name: frontend_wa_ss24_primeflex
+    restart: always
+    ports:
+      - "10034:3000"
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
+
+volumes:
+  data: {}
